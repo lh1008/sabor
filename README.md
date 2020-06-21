@@ -21,8 +21,8 @@ Public Domain. No copy write protection.
 **Felipe Astudillo** - Sabor Skateboards Owner
 - Instagram
  - [@saborskateboards](https://www.instagram.com/saborskateboards/?hl=en)
- - [@deliciasdelasfalot](https://www.instagram.com/deliciasdelasfalto/?hl=en)
-**Jhonatan Legarda** - Frontend Developer
- - [Github](https://github.com/steven-cruz) / [Twitter](https://twitter.com/JhonatanLegarda)
-**Luis Herrera** - Backend Developer
+ - [@deliciasdelasfalot](https://www.instagram.com/deliciasdelasfalto/?hl=en)  
+**Jhonatan Legarda** - Frontend Developer  
+ - [Github](https://github.com/steven-cruz) / [Twitter](https://twitter.com/JhonatanLegarda)  
+**Luis Herrera** - Backend Developer  
  - [Github](https://github.com/lh1008) / [Twitter](https://twitter.com/lh1008)
