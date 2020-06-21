@@ -55,9 +55,11 @@ table {
 /*=====================================================================*/
 /*                               DISEÑO                                */
 /*=====================================================================*/
-body {
-  background-color: red;
+.body {
+  /* background-image: url(../images/Portada\ -\ Fondo\ #1A1A1A.svg); */
+  background-color: rgb(83, 41, 2);
   font-family: 'Bebas Neue', cursive;
+  color: white;
 }
 
 /*-----BARRA DE NAVEGACION ---------*/
@@ -66,11 +68,12 @@ body {
   width: 12%;
   height: 300%;
   float: left;
-  font-size: 25px;
+  font-size: 40px;
 }
 #i-navbar{
     width: 80%;
     margin-top: 15%;
+    margin-bottom: 90%;
 }
 
 nav li{
@@ -79,7 +82,9 @@ nav li{
 }
 #e-inicio{
 color: red;
-margin-top: 70%;
+}
+nav a{
+  color: white;
 }
 /*------- PRINCIPAL ----------*/
 .principal{
@@ -97,21 +102,25 @@ margin-top: 70%;
   margin-left: 12%;
   font-family: 'Bebas Neue', cursive;
 }
-#segundo-slider{
-  text-align: center;
-  font-family: 'Bebas Neue', cursive;
-}
 #primer-slider{
   text-align: center;
 }
-
+#segundo-slider{
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+}
+.text-center{
+  text-align: center;
+}
 /*-----------CREDITS ---------------*/
 .credits{
+  font-size: 30px;
   margin-left: 12%;
   font-family: 'Bebas Neue', cursive;
 }
 .credits-content{
-  margin-left: 25%;
+  margin-left: 20%;
 }
 
 #img-sabor{
