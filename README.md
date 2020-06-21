@@ -4,7 +4,7 @@
 
 This project is a static website that will display the launch video of the first Colombian skateboard video produced in Cali - Colombia.
 
-![alt text](web_static/static/images/delicias_fondo.png | width=100)
+![alt text](web_static/static/images/delicias_fondo.png)
 
 ## Build With
 
