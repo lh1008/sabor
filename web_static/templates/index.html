@@ -6,6 +6,7 @@
     <meta name="description" content="DELICIAS DEL ASFALTO es una producción audiovisual; la primera película de skateboarding realizada por la marca de patinetas caleña Sabor Skateboards, con la participación del tema 2019, skaters de la sucursal del cielo y otras ciudades de Colombia">
     <!-- Required meta tags -->
     <meta name="Siddha Vidya" content="@lh1008">
+    <meta name="Steven Cruz" content="@steven-cruz - https://github.com/steven-cruz">
     <meta charset="UTF-8">
     <meta name="keywords" content="saborskateboards, deliciasdelasfalto, skateboarding, skatevideo, skatefilm, skateboards">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
@@ -30,6 +31,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="../static/images/favicon/ms-icon-144x144.png">
     <!-- <meta name="theme-color" content="#ffffff"> -->
+    <!-- icon close para editar perfil -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
 
 <!-- Cuerpo de la pagina -->
@@ -37,24 +40,23 @@
     <!-- NAVBAR -->
     <nav class="navbar1">
         <ul>
-            <li><img src="../static/images/logo_sabor_oficial.svg" alt="Logo Sabor Oficial" id="i-navbar"></li>
+            <a href="https://www.instagram.com/saborskateboards/?hl=en" target="_blank">
+                <li><img src="../static/images/logo_sabor_oficial.svg" alt="Logo Sabor Oficial" id="i-navbar"></li>
+            </a>
             <li><a href="index.html" id="e-inicio">INICIO</a></li>
-            <li><a href="#">PELÍCULA</a></li>
-        </ul>       
+            <li><a href="#" id="btn-abrir-popup" class="btn-abrir-popup original">PELÍCULA</a></li>
+        </ul>
     </nav>
 
     <!-- IMAGEN PRINCIPAL -->
     <section class="principal">
-        <img src="../static/images/delicias.png" alt="Logo Delicias del Asfalto">
+        <a href="https://www.instagram.com/deliciasdelasfalto/?hl=en" target="_blank">
+            <img src="../static/images/delicias.png" alt="Logo Delicias del Asfalto">
+        </a>
     </section>
 
     <!-- SLIDER CONTENT -->
     <div id="carouselEducaCodigo" class="carousel slide slider">
-
-        <ol class="carousel-indicators">
-            <li data-slide-to="0" class="active"></li>
-            <li data-slide-to="1"></li>
-        </ol>
 
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -67,7 +69,7 @@
                 <p class="text-center">FELIPE ASTUDILLO</p><br><br>
             </div>
             <div class="carousel-item" id="segundo-slider">
-                <p><b>"Delicias del Asfalto"</b> es una producción audiovisual; la primera pelicula de skateboarding <br>realizada por la marca de patinetas caleña <b>Sabor Skateboards,</b><br>con la participación del <b>Team 2019,</b> Skaters de la Sucursal del Cielo (Cali) y otras ciudades de Colombia.</p><br><br>
+                <p><b>"Delicias del Asfalto"</b> es una producción audiovisual; la primera película de skateboarding <br>realizada por la marca de patinetas caleña <b>Sabor Skateboards,</b><br>con la participación del <b>Team 2019,</b> Skaters de la Sucursal del Cielo (Cali) y otras ciudades de Colombia.</p><br><br>
             </div>
 
         </div>
@@ -84,17 +86,58 @@
 
     </div> <!-- cierre del Slideshow -->
 
+    <!-- ventana emergente para ver video -->
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>Edit Profile</h3>
+            <video width="100%" controls>
+                <source src="/home/siddha/Videos/sabor/skate.mp4" type="video/mp4">
+              </video>
+        </div>
+    </div>
+
 
     <!-- CREDITS -->
     <section class="credits fixed-bottom">
         <div class="credits-content">
-            <p>UNA PRODUCCIÓN DE: <img src="../static/images/logo_sabor_oficial.svg" id="img-sabor" alt="Logo Sabor Oficial"> APOYA: <img src="../static/images/logo_mini.svg" alt="Logo Mini" id="img-mini"></p>
+            <p>UNA PRODUCCIÓN DE: <a href="https://www.instagram.com/saborskateboards/?hl=en" target="_blank"><img src="../static/images/logo_sabor_oficial.svg" id="img-sabor" alt="Logo Sabor Oficial"></a> APOYA: <a href="https://www.facebook.com/miniskateworkshop/" target="_blank"><img src="../static/images/logo_mini.svg" alt="Logo Mini" id="img-mini"></a></p>
         </div>
     </section>
 
     <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+        /* js para editar perfil */
+        var btnAbrirPopup = document.getElementById('btn-abrir-popup'),
+            overlay = document.getElementById('overlay'),
+            popup = document.getElementById('popup'),
+            btnCerrarPopup = document.getElementById('btn-cerrar-popup');
+    
+        btnAbrirPopup.addEventListener('click', function(){
+            async function loadData() {
+                let response = await fetch(window.location + '/info', { headers:{
+                    'Content-Type': 'application/json'
+                }}).then(r => {
+                    return (r.json());
+                }).then(r => {
+                    return (r);
+                });
+                console.log(response);
+            };
+            loadData()
+            // console.log(window.location);
+            overlay.classList.add('active');
+            popup.classList.add('active');
+        });
+    
+        btnCerrarPopup.addEventListener('click', function(e){
+            e.preventDefault();
+            overlay.classList.remove('active');
+            popup.classList.remove('active');
+        });
+        </script>
 </body>
 </html>
