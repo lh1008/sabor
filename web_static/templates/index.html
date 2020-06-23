@@ -60,13 +60,16 @@
 
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <p id="primer-slider">
-                    CON: SEBASTIÁN AGREDO, ANTONIO CHAMAT, DANIELA BALANTA, ALEXANDER DUQUE, ANDRÉS VALENCIA, ADRIÁN CASTRO, HARRY VIVAS,<br>
+                <p id="primer-slider" >
+                    <div id="primer-slider">
+                        <div class="in-con"><small>CON:</small></div> SEBASTIÁN AGREDO, ANTONIO CHAMAT, DANIELA BALANTA, ALEXANDER DUQUE, ANDRÉS VALENCIA, ADRIÁN CASTRO, HARRY VIVAS,<br>
                     SEBASTIÁN MEJÍA, JEAN CARLOS CORTÉS, YEFRIN LÓPEZ, LEIDY ECHEVERRY, FRAN MOLINA, JESÚS DAZA, MARLON MONCADA, JOSÉ DAVID CARDONA,<br>
                     NICOLÁS BALANTA, FELIPE ASTUDILLO, HARRY MERA, ANDRÉS MEJÍA, DAVID GARCÍA, CHRISTIAN CALDERON, JOSÉ DAVID VÉLEZ, KEVIN MANCIPE, YOHAN REYES.<br>
-                    CÁMARA: SANTIAGO SALAZAR, FELIPE ZAMBRANO, VANESA GIMÉNEZ, DANIEL QUINTERO, CARLOS CANO, RAFAEL QUIROGA, JESÚS DAZA, FELIPE ASTUDILLO. EDICIÓN: JESÚS DAZA.</p>
-                <p class="text-center">UNA PELÍCULA<br>POR:</p> 
-                <p class="text-center">FELIPE ASTUDILLO</p><br><br>
+                    <div class="in-camara"><small>CÁMARA:</small></div> <div class="in-names">SANTIAGO SALAZAR, FELIPE ZAMBRANO, VANESA GIMÉNEZ, DANIEL QUINTERO, CARLOS CANO, RAFAEL QUIROGA, JESÚS DAZA, FELIPE ASTUDILLO.</div> <div class="in-edicion"><small>EDICIÓN:</small></div> <div class="in-daza">JESÚS DAZA.</div></p>
+                    </div>
+                <p><div class="in-peli"><small>UNA PELÍCULA</small></div></p>
+                <p><div class="in-por"><small>POR:</small></div></p>
+                <p><div class="in-name">FELIPE ASTUDILLO</div></p><br><br>
             </div>
             <div class="carousel-item" id="segundo-slider">
                 <p><b>"Delicias del Asfalto"</b> es una producción audiovisual; la primera película de skateboarding <br>realizada por la marca de patinetas caleña <b>Sabor Skateboards,</b><br>con la participación del <b>Team 2019,</b> Skaters de la Sucursal del Cielo (Cali) y otras ciudades de Colombia.</p><br><br>
@@ -90,7 +93,7 @@
     <div class="overlay" id="overlay">
         <div class="popup" id="popup">
             <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-            <video width="100%" controls>
+            <video width="100%" controls controlsList="nodownload">
                 <source src="/skate.mp4" type="video/mp4">
               </video>
         </div>
@@ -100,7 +103,7 @@
     <!-- CREDITS -->
     <section class="credits fixed-bottom">
         <div class="credits-content">
-            <p>UNA PRODUCCIÓN DE: <a href="https://www.instagram.com/saborskateboards/?hl=en" target="_blank"><img src="../static/images/logo_sabor_oficial.svg" id="img-sabor" alt="Logo Sabor Oficial"></a> APOYA: <a href="https://www.facebook.com/miniskateworkshop/" target="_blank"><img src="../static/images/logo_mini.svg" alt="Logo Mini" id="img-mini"></a></p>
+            <p class="credits-scale">UNA PRODUCCIÓN DE:</p> <a href="https://www.instagram.com/saborskateboards/?hl=en" target="_blank"><img src="../static/images/logo_sabor_oficial.svg" id="img-sabor" alt="Logo Sabor Oficial"></a> <p class="credits-scale">CON EL APOYO DE:</p> <a href="https://www.facebook.com/miniskateworkshop/" target="_blank"><img src="../static/images/logo_mini.svg" alt="Logo Mini" id="img-mini"></a>
         </div>
     </section>
 
