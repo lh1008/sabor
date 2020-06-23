@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(53, 34,35);
+    
+}
+.container {
+    width: 80%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.text-header {
+    position: relative;
+    font-family: 'Bebas Neue', cursive;
+    font-size: x-large;
+    color: white;
+    text-align: center;
+    margin-top: -10%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
