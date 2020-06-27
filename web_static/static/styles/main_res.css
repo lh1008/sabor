@@ -1,0 +1,306 @@
+/*--------------------------------------------*/
+/*              Reset CSS                     */
+/*--------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* No olvides definir estilos para focus */
+:focus {
+  outline: 0;
+}
+
+/* No olvides resaltar de alguna manera el texto insertado/borrado */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+
+/* En el código HTML es necesario añadir cellspacing="0" */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*=====================================================================*/
+/*                               DESIGN                                */
+/*=====================================================================*/
+.body {
+  /* background-image: url(../images/Portada\ -\ Fondo\ #1A1A1A.svg); */
+  background-color: rgb(53, 34,35);
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+}
+
+/*-----NAVIGATION BAR ---------*/
+.navbar1{
+  background-color: red;
+  font-family: 'Bebas Neue', cursive;
+  width: 30%;
+  float: left;
+}
+#i-navbar{
+    width: 70%;
+    margin-top: 10%;
+    margin-left: -5%;
+}
+
+nav li{
+    text-align: center;
+    margin-top: 10%;
+}
+nav a{
+  color: white;
+}
+nav a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.original {
+  font-size: 180%;
+}
+/*------- MAIN ----------*/
+.principal img{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: auto;
+  margin-top: -10%;
+}
+
+/*--------- SLIDER -----------------*/
+.slider{
+  /* margin-left: 10%; */
+  background-color: green;
+}
+#primer-slider{
+  margin-top: 2%;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  font-size: 60%;
+  letter-spacing: -1px;
+  transform: scale(1, 1.3);
+  line-height: 93%;
+}
+.in-con {
+  margin-left: -55.3%;
+  margin-bottom: -1.6%;
+}
+.in-camara {
+  margin-left: -66%;
+}
+.in-names {
+  margin-left: -4%;
+  position: relative;
+  margin-top: -1.66%;
+}
+.in-edicion {
+  margin-right: -57.6%;
+  margin-top: -1.5%;
+}
+.in-daza {
+  margin-right: -65.8%;
+  margin-top: -1.68%;
+}
+.in-peli {
+    font-size: 45%;
+  position: relative;
+  margin-top: -2.8%;
+  /* margin-bottom: -1.5%; */
+  margin-left: 40%;
+}
+.in-por {
+    font-size: 45%;
+  position: relative;
+  margin-top: -5%;
+  margin-bottom: -10%;
+  margin-left: 43.8%;
+}
+.in-name {
+  position: relative;
+  letter-spacing: -1px;
+  font-size: 70%;
+  transform: scale(1, 1.3);
+  margin-left: 45.6%;
+  margin-top: 6.6%;
+}
+#segundo-slider{
+  margin-bottom: 5.4%;
+  margin-top: 2%;
+  text-align: center;
+  font-family: 'Arial', cursive;
+  font-size: 90%;
+}
+
+/*-----------CREDITS ---------------*/
+.credits{
+  margin-left: 25%;
+  font-family: 'Bebas Neue', cursive;
+}
+.credits-content{
+  position: relative;
+  margin-left: 15%;
+  margin-bottom: 4%;
+}
+.credits-scale {
+  display: inline-block;
+  font-size: 140%;
+  transform: scale(1, 1.3);
+}
+  
+
+#img-sabor{
+  width: 18%;
+}
+#img-mini{
+  width: 10%;
+}
+
+/*---------- FOOTER ----------------*/
+footer{
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+}
+
+/* WINDOW VIDEO STYLES */
+/* ------------------------- */
+/*          POPUP            */
+/* ------------------------- */
+
+.overlay {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+}
+
+.overlay.active {
+	visibility: visible;
+}
+
+.popup {
+  position: absolute;
+	background: #F8F8F8;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	font-family: 'Bebas Neue', sans-serif;
+	padding: 20px;
+	text-align: center;
+	width: 680px;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup .btn-cerrar-popup {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup .btn-cerrar-popup:hover {
+	color: #000;
+}
+
+.popup h4 {
+	font-size: 26px;
+	font-weight: 300;
+	margin-bottom: 40px;
+	opacity: 0;
+}
+
+.popup form .contenedor-inputs {
+	opacity: 0;
+}
+
+.popup form .contenedor-inputs input {
+	width: 100%;
+	margin-bottom: 20px;
+	height: 52px;
+	font-size: 18px;
+	line-height: 52px;
+	text-align: center;
+	border: 1px solid #BBBBBB;
+}
+
+.popup form .btn-submit {
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #5E7DE3;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+}
+
+.popup form .btn-submit:hover {
+	background: rgba(94,125,227, .9);
+}
+
+/* ------------------------- */
+/*       ANIMATIONS         */
+/* ------------------------- */
+.popup.active {	transform: scale(1); opacity: 1; }
+.popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
+.popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
+.popup.active .contenedor-inputs { animation: entradaInputs 1s linear 1s forwards; }
+
+
+/* ------------------------- */
+/*    MOBILE - RESPONSIVE    */
+/* ------------------------- */
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 767px) {
+  
+}
+
+@media screen and (min-width: 950px) {
+  
+}
