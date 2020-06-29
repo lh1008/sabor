@@ -109,7 +109,7 @@ nav a:hover {
 
 .container {
   position: relative;
-  background-color: #5E7DE3;
+  /* background-color: #5E7DE3; */
 }
 
 /*--------- SLIDER -----------------*/
@@ -121,58 +121,73 @@ nav a:hover {
   margin-top: 2%;
   font-family: 'Bebas Neue', cursive;
   text-align: center;
+  /* font-size: 45%; */
   letter-spacing: -0.5px;
   transform: scale(1, 1.3);
-  line-height: 90%;
 }
-.line-up-1 {
+.line-up-1 > div {
   display: inline-block;
+  /* background-color: lightseagreen; */
+  vertical-align: bottom;
+  margin-bottom: -0.1%;
+}
+.in-names-1 {
+  position: relative;
+  /* background-color: maroon; */
+  width: max-content;
+  font-size: 45%;
 }
 .in-names-all {
   position: relative;
-  background-color: indigo;
+  /* background-color: indigo; */
   margin-left: auto;
   margin-right: auto;
   width: max-content;
-  font-size: 55%;
+  margin-top: -0.8%;
+  font-size: 45%;
 }
 .in-con {
   position: relative;
-  background-color: green;
-  vertical-align: middle;
+  /* background-color: green; */
   width: max-content;
-  font-size: 55%;
+  font-size: 45%;
 }
 .line-up-2 > div {
+  position: relative;
   display: inline-block;
+  vertical-align: top;
+  /* font-size: 45%; */
+  margin-top: -1%;
 }
 .in-camara {
   position: relative;
-  background-color: green;
+  /* background-color: green; */
   width: max-content;
-  font-size: 55%;
+  font-size: 45%;
 }
-.in-names {
+.in-names-2 {
   position: relative;
-  background-color: green;
+  /* background-color: green; */
   width: max-content;
-  font-size: 55%;
+  font-size: 45%;
 }
 .in-edicion {
   position: relative;
-  background-color: green;
+  /* background-color: green; */
   width: max-content;
-  font-size: 55%;
+  font-size: 45%;
 }
 .in-daza {
   position: relative;
-  background-color: green;
+  /* background-color: green; */
   width: max-content;
-  font-size: 55%;
+  font-size: 45%;
 }
 .movie-from {
   position: relative;
-  background-color: red;
+  /* background-color: red; */
+  margin-top: -9%;  
+  /* vertical-align: top; */
   width: max-content;
   margin-left: auto;
   margin-right: auto;
@@ -180,29 +195,30 @@ nav a:hover {
 
 .movie-from > div {
   display: inline-block;
+  /* font-size: 50%; */
 }
 .in-peli {
   position: relative;
   vertical-align: middle;
   text-align: right;
-  margin-top: 3%;
-  left: 2.5%;
-  line-height: 80%;
-  background-color: blue;
+  left: 3.5%;
+  line-height: 68%;
+  /* background-color: blue; */
   width: max-content;
   font-size: 45%;
 }
-.in-name {
+.in-names-3 {
   position: relative;
-  background-color: grey;
-  letter-spacing: -1px;
-  font-size: 70%;
+  /* background-color: grey; */
+  letter-spacing: -0.5px;
+  vertical-align: middle;
+  font-size: 60%;
   transform: scale(1, 1.3);
   width: max-content;
 }
 #segundo-slider{
   margin-bottom: 8.6%;
-  margin-top: 2%;
+  margin-top: 5%;
   text-align: center;
   font-family: 'Arial', cursive;
   font-size: 60%;
