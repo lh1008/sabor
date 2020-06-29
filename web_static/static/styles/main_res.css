@@ -107,17 +107,13 @@ nav a:hover {
   margin-top: -10%;
 }
 
-.container {
-  position: relative;
-  /* background-color: #5E7DE3; */
-}
-
 /*--------- SLIDER -----------------*/
 .slider{
   margin-top: -6%;
   /* background-color: green; */
 }
 #primer-slider{
+  display: flexbox;
   margin-top: 2%;
   font-family: 'Bebas Neue', cursive;
   text-align: center;
@@ -135,7 +131,7 @@ nav a:hover {
   position: relative;
   /* background-color: maroon; */
   width: max-content;
-  font-size: 45%;
+  font-size: 50%;
 }
 .in-names-all {
   position: relative;
@@ -144,13 +140,13 @@ nav a:hover {
   margin-right: auto;
   width: max-content;
   margin-top: -0.8%;
-  font-size: 45%;
+  font-size: 50%;
 }
 .in-con {
   position: relative;
   /* background-color: green; */
   width: max-content;
-  font-size: 45%;
+  font-size: 50%;
 }
 .line-up-2 > div {
   position: relative;
@@ -163,30 +159,30 @@ nav a:hover {
   position: relative;
   /* background-color: green; */
   width: max-content;
-  font-size: 45%;
+  font-size: 50%;
 }
 .in-names-2 {
   position: relative;
   /* background-color: green; */
   width: max-content;
-  font-size: 45%;
+  font-size: 50%;
 }
 .in-edicion {
   position: relative;
   /* background-color: green; */
   width: max-content;
-  font-size: 45%;
+  font-size: 50%;
 }
 .in-daza {
   position: relative;
   /* background-color: green; */
   width: max-content;
-  font-size: 45%;
+  font-size: 50%;
 }
 .movie-from {
   position: relative;
   /* background-color: red; */
-  margin-top: -9%;  
+  margin-top: -10%;  
   /* vertical-align: top; */
   width: max-content;
   margin-left: auto;
@@ -217,7 +213,7 @@ nav a:hover {
   width: max-content;
 }
 #segundo-slider{
-  margin-bottom: 8.6%;
+  /* margin-bottom: 8.6%git; */
   margin-top: 5%;
   text-align: center;
   font-family: 'Arial', cursive;
@@ -227,6 +223,7 @@ nav a:hover {
 
 /*-----------CREDITS ---------------*/
 .credits{
+  position: relative;
   background-color: #BBBBBB;
   font-family: 'Bebas Neue', cursive;
 }
