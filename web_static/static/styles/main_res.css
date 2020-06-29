@@ -18,7 +18,16 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
   background: transparent;
 }
-body {
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/bebasNeue_Regular.eot');
+  src: url('../fonts/bebasNeue_Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+      url('../fonts/bebasNeue_Regular.woff2') format('woff2'),
+      url('../fonts/bebasNeue_Regular.woff') format('woff'), /* Modern Browsers */
+      url('../fonts/bebasNeue_Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('../fonts/bebasNeue_Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+body, html {
   line-height: 1;
 }
 ol, ul {
@@ -64,7 +73,7 @@ table {
 
 /*-----NAVIGATION BAR ---------*/
 .navbar1{
-  background-color: red;
+  /* background-color: red; */
   font-family: 'Bebas Neue', cursive;
   width: 30%;
   float: left;
@@ -98,73 +107,111 @@ nav a:hover {
   margin-top: -10%;
 }
 
+.container {
+  position: relative;
+  background-color: #5E7DE3;
+}
+
 /*--------- SLIDER -----------------*/
 .slider{
-  /* margin-left: 10%; */
-  background-color: green;
+  margin-top: -6%;
+  /* background-color: green; */
 }
 #primer-slider{
   margin-top: 2%;
   font-family: 'Bebas Neue', cursive;
   text-align: center;
-  font-size: 60%;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
   transform: scale(1, 1.3);
-  line-height: 93%;
+  line-height: 90%;
+}
+.line-up-1 {
+  display: inline-block;
+}
+.in-names-all {
+  position: relative;
+  background-color: indigo;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+  font-size: 55%;
 }
 .in-con {
-  margin-left: -55.3%;
-  margin-bottom: -1.6%;
+  position: relative;
+  background-color: green;
+  vertical-align: middle;
+  width: max-content;
+  font-size: 55%;
+}
+.line-up-2 > div {
+  display: inline-block;
 }
 .in-camara {
-  margin-left: -66%;
+  position: relative;
+  background-color: green;
+  width: max-content;
+  font-size: 55%;
 }
 .in-names {
-  margin-left: -4%;
   position: relative;
-  margin-top: -1.66%;
+  background-color: green;
+  width: max-content;
+  font-size: 55%;
 }
 .in-edicion {
-  margin-right: -57.6%;
-  margin-top: -1.5%;
+  position: relative;
+  background-color: green;
+  width: max-content;
+  font-size: 55%;
 }
 .in-daza {
-  margin-right: -65.8%;
-  margin-top: -1.68%;
+  position: relative;
+  background-color: green;
+  width: max-content;
+  font-size: 55%;
+}
+.movie-from {
+  position: relative;
+  background-color: red;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.movie-from > div {
+  display: inline-block;
 }
 .in-peli {
-    font-size: 45%;
   position: relative;
-  margin-top: -2.8%;
-  /* margin-bottom: -1.5%; */
-  margin-left: 40%;
-}
-.in-por {
-    font-size: 45%;
-  position: relative;
-  margin-top: -5%;
-  margin-bottom: -10%;
-  margin-left: 43.8%;
+  vertical-align: middle;
+  text-align: right;
+  margin-top: 3%;
+  left: 2.5%;
+  line-height: 80%;
+  background-color: blue;
+  width: max-content;
+  font-size: 45%;
 }
 .in-name {
   position: relative;
+  background-color: grey;
   letter-spacing: -1px;
   font-size: 70%;
   transform: scale(1, 1.3);
-  margin-left: 45.6%;
-  margin-top: 6.6%;
+  width: max-content;
 }
 #segundo-slider{
-  margin-bottom: 5.4%;
+  margin-bottom: 8.6%;
   margin-top: 2%;
   text-align: center;
   font-family: 'Arial', cursive;
-  font-size: 90%;
+  font-size: 60%;
+  letter-spacing: -1px;
 }
 
 /*-----------CREDITS ---------------*/
 .credits{
-  margin-left: 25%;
+  background-color: #BBBBBB;
   font-family: 'Bebas Neue', cursive;
 }
 .credits-content{
@@ -178,7 +225,6 @@ nav a:hover {
   transform: scale(1, 1.3);
 }
   
-
 #img-sabor{
   width: 18%;
 }
