@@ -56,29 +56,25 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <p id="primer-slider" >
-                <div id="primer-slider">
-                    <div class="line-up-1">
-                        <div class="in-con"><small>CON:</small></div> 
-                        <div class="in-names-1">SEBASTIÁN AGREDO, ANTONIO CHAMAT, DANIELA BALANTA, ALEXANDER DUQUE, ANDRÉS VALENCIA, ADRIÁN CASTRO, HARRY VIVAS,<br></div>
-                    </div>
-                    <div class="in-names-all">SEBASTIÁN MEJÍA, JEAN CARLOS CORTÉS, YEFRIN LÓPEZ, LEIDY ECHEVERRY, FRAN MOLINA, JESÚS DAZA, MARLON MONCADA, JOSÉ DAVID CARDONA,<br></div>
-                    <div class="in-names-all">NICOLÁS BALANTA, FELIPE ASTUDILLO, HARRY MERA, ANDRÉS MEJÍA, DAVID GARCÍA, CHRISTIAN CALDERON, JOSÉ DAVID VÉLEZ, KEVIN MANCIPE, YOHAN REYES.<br></div>
-                    
-                    <div class="line-up-2">
-                        <div class="in-camara"><small>CÁMARA:</small></div>
-                        <div class="in-names-2">SANTIAGO SALAZAR, FELIPE ZAMBRANO, VANESA GIMÉNEZ, DANIEL QUINTERO, CARLOS CANO, RAFAEL QUIROGA, JESÚS DAZA, FELIPE ASTUDILLO.</div>
-                        <div class="in-edicion"><small>EDICIÓN:</small></div>
-                        <div class="in-daza">JESÚS DAZA.</div></p>
-                    </div>
-                    <div class="movie-from">
-                        <div class="in-peli"><small>UNA PELÍCULA</small><br><small>POR:</small></div>
-                        <div class="in-names-3">FELIPE ASTUDILLO</div>
-                    </div>
+            <div id="primer-slider">
+                <div class="line-up-1">
+                    <div class="in-con"><small>CON:</small></div> 
+                    <div class="in-names-1">SEBASTIÁN AGREDO, ANTONIO CHAMAT, DANIELA BALANTA, ALEXANDER DUQUE, ANDRÉS VALENCIA, ADRIÁN CASTRO, HARRY VIVAS,<br></div>
                 </div>
+                <div class="in-names-all">SEBASTIÁN MEJÍA, JEAN CARLOS CORTÉS, YEFRIN LÓPEZ, LEIDY ECHEVERRY, FRAN MOLINA, JESÚS DAZA, MARLON MONCADA, JOSÉ DAVID CARDONA,<br></div>
+                <div class="in-names-all">NICOLÁS BALANTA, FELIPE ASTUDILLO, HARRY MERA, ANDRÉS MEJÍA, DAVID GARCÍA, CHRISTIAN CALDERON, JOSÉ DAVID VÉLEZ, KEVIN MANCIPE, YOHAN REYES.<br></div>
                 
-                
-            </p>
+                <div class="line-up-2">
+                    <div class="in-camara"><small>CÁMARA:</small></div>
+                    <div class="in-names-2">SANTIAGO SALAZAR, FELIPE ZAMBRANO, VANESA GIMÉNEZ, DANIEL QUINTERO, CARLOS CANO, RAFAEL QUIROGA, JESÚS DAZA, FELIPE ASTUDILLO.</div>
+                    <div class="in-edicion"><small>EDICIÓN:</small></div>
+                    <div class="in-daza">JESÚS DAZA.</div></p>
+                </div>
+                <div class="movie-from">
+                    <div class="in-peli"><small>UNA PELÍCULA</small><br><small>POR:</small></div>
+                    <div class="in-names-3">FELIPE ASTUDILLO</div>
+                </div>
+            </div>    
             </div>
             <div class="carousel-item">
             <div id="segundo-slider">
@@ -86,29 +82,30 @@
             </div>
             </div>
         </div>
-        </div> <!-- Slideshow Closing -->
+    </div> 
+    <!-- Slideshow Closing -->
 
     <!-- Video Window -->
     <div class="overlay" id="overlay">
         <div class="popup" id="popup">
             <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
             <video id="noContextMenu" width="100%" controls controlsList="nodownload noremoteplayback" autoplay="autoplay" oncontextmenu="return false;">
-                <source src="" type="video/mp4">
+                <source src="../170115_05_USDollars1_2K.mp4" type="video/mp4">
             </video>    
         </div>
     </div>
-
-
+    
     <!-- CREDITS -->
-    <section class="credits">
-        <div class="text-center">
-            <p class="credits-scale">UNA PRODUCCIÓN DE:</p><br>
-            <a href="https://www.instagram.com/saborskateboards/?hl=en" target="_blank"><img src="../static/images/logo_sabor_oficial.svg" id="img-sabor" alt="Logo Sabor Oficial" oncontextmenu="return false;"></a><br>
-            <p class="credits-scale">CON EL APOYO DE:</p><br>
-            <a href="https://www.facebook.com/miniskateworkshop/" target="_blank"><img src="../static/images/logo_mini.svg" alt="Logo Mini" id="img-mini" oncontextmenu="return false;"></a>
+    <footer>
+        <div class="credits fixed-bottom">
+            <div class="text-center">
+                <p class="credits-scale">UNA PRODUCCIÓN DE:</p><br>
+                <a href="https://www.instagram.com/saborskateboards/?hl=en" target="_blank"><img src="../static/images/logo_sabor_oficial.svg" id="img-sabor" alt="Logo Sabor Oficial" oncontextmenu="return false;"></a><br>
+                <p class="credits-scale">CON EL APOYO DE:</p><br>
+                <a href="https://www.facebook.com/miniskateworkshop/" target="_blank"><img src="../static/images/logo_mini.svg" alt="Logo Mini Oficial" id="img-mini" oncontextmenu="return false;"></a>
+            </div>
         </div>
-    </section>
-
+    </footer>
         
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -117,15 +114,27 @@
     <script>
         /* NoContextMenu */
         noContext = document.getElementById('noContextMenu');
-
-        noContext.addEventListener('contextmenu', e => {
-            e.preventDefault();
-        });
+        videoChilds = noContext.childNodes;
+        noContext.controls = false;
+        for (const child of videoChilds) {
+            child.addEventListener('contextmenu', e => {
+                e.preventDefault();
+            }); 
+        }
         /* js to popup video */
         var btnAbrirPopup = document.getElementById('btn-abrir-popup'),
             overlay = document.getElementById('overlay'),
             popup = document.getElementById('popup'),
             btnCerrarPopup = document.getElementById('btn-cerrar-popup');
+            isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)
+        
+        if (isMobile) {
+            btnAbrirPopup.setAttribute('class', 'original_mobile');
+            btnAbrirPopup.parentNode.style.position = 'absolute';
+            btnAbrirPopup.parentNode.style.left = 'calc(50% - 4vw)';
+            btnAbrirPopup.parentNode.style.top = '36vw';
+            btnAbrirPopup.innerHTML = '';
+        } 
     
         btnAbrirPopup.addEventListener('click', function(){
             async function loadData() {
@@ -141,12 +150,14 @@
             loadData()
             overlay.classList.add('active');
             popup.classList.add('active');
+            noContext.play();
         });
     
         btnCerrarPopup.addEventListener('click', function(e){
             e.preventDefault();
             overlay.classList.remove('active');
             popup.classList.remove('active');
+            noContext.pause();
         });
     </script>
 </body>
