@@ -287,3 +287,19 @@ footer{
 .popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
 .popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
 .popup.active .contenedor-inputs { animation: entradaInputs 1s linear 1s forwards; }
+
+
+/* ------------------------- */
+/*    MOBILE - RESPONSIVE    */
+/* ------------------------- */
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 767px) {
+  
+}
+
+@media screen and (min-width: 950px) {
+  
+}
