@@ -4,13 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Delicias del Asfalto</title>
-    <meta name="description" content="DELICIAS DEL ASFALTO es una producción audiovisual; la primera película de skateboarding realizada por la marca de patinetas caleña Sabor Skateboards, con la participación del tema 2019, skaters de la sucursal del cielo y otras ciudades de Colombia">
+    <meta name="description" content="DELICIAS DEL ASFALTO es una producción audiovisual; la primera película de skateboarding realizada por la marca de patinetas caleña Sabor Skateboards, con la participación del tema 2019, skaters de la sucursal del cielo y otras ciudades de Colombia.">
     <!-- Required meta tags -->
     <meta name="Felipe Astudillo" content="Owner/@saborskateboards @deliciasdelasfalto">
     <meta name="Luis Herrera" content="@lh1008 - https://github.com/lh1008 Frontend/Backend Developer">
     <meta name="Steven Cruz" content="@steven-cruz - https://github.com/steven-cruz Frontend Designer">
-    <meta charset="UTF-8">
     <meta name="keywords" content="saborskateboards, deliciasdelasfalto, skateboarding, skatevideo, skatefilm, skateboards">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://deliciasdelasfalto.com/">
+    <meta name="twitter:title" content="Delicias del Asfalto">
+    <meta name="twitter:description" content="DELICIAS DEL ASFALTO es una producción audiovisual; la primera película de skateboarding realizada por la marca de patinetas caleña Sabor Skateboards, con la participación del tema 2019, skaters de la sucursal del cielo y otras ciudades de Colombia.">
+    <meta name="twitter:image" content="https://deliciasdelasfalto/images/logo.png">
     <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
     <!-- Styles CSS -->
@@ -23,7 +28,7 @@
     <!-- Fonts -->
     <!-- <link rel="stylesheet" href="../static/styles/main_res.css" type="text/css" charset="utf-8" /> -->
     <!-- Favicon -->
-        <link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicon_delicias.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicon_delicias.svg">
     <link rel="manifest" href="../static/images/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <!-- Icon to close video streaming -->
@@ -95,17 +100,26 @@
         </div>
     </div>
     
-    <!-- CREDITS -->
+    <!-- CREDITS
     <footer>
         <div class="credits fixed-bottom">
-            <div class="text-center">
-                <p class="credits-scale">UNA PRODUCCIÓN DE:</p><br>
+            <div class="landscape">
+                <p class="credits-scale produccion">UNA PRODUCCIÓN DE:</p><br>
                 <a href="https://www.instagram.com/saborskateboards/?hl=en" target="_blank"><img src="../static/images/logo_sabor_oficial.svg" id="img-sabor" alt="Logo Sabor Oficial" oncontextmenu="return false;"></a><br>
                 <p class="credits-scale">CON EL APOYO DE:</p><br>
                 <a href="https://www.facebook.com/miniskateworkshop/" target="_blank"><img src="../static/images/logo_mini.svg" alt="Logo Mini Oficial" id="img-mini" oncontextmenu="return false;"></a>
             </div>
         </div>
-    </footer>
+    </footer> -->
+
+    <div>
+        <div class="landscape">
+            <div class="produccion"><p>UNA PRODUCCIÓN DE:</p><br></div>
+            <div class="img-sabor"><a href="https://www.instagram.com/saborskateboards/?hl=en" target="_blank"><img src="../static/images/logo_sabor_oficial.svg" alt="Logo Sabor Oficial" oncontextmenu="return false;"></a><br></div>
+            <div class="apoyo"><p>CON EL APOYO DE:</p><br></div>
+            <div class="img-mini"><a href="https://www.facebook.com/miniskateworkshop/" target="_blank"><img src="../static/images/logo_mini.svg" alt="Logo Mini Oficial" oncontextmenu="return false;"></a></div>
+        </div>
+    </div>
         
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -126,15 +140,10 @@
             overlay = document.getElementById('overlay'),
             popup = document.getElementById('popup'),
             btnCerrarPopup = document.getElementById('btn-cerrar-popup');
-            isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)
-        
-        if (isMobile) {
             btnAbrirPopup.setAttribute('class', 'original_mobile');
             btnAbrirPopup.parentNode.style.position = 'absolute';
             btnAbrirPopup.parentNode.style.left = 'calc(50% - 4vw)';
-            btnAbrirPopup.parentNode.style.top = '36vw';
             btnAbrirPopup.innerHTML = '';
-        } 
     
         btnAbrirPopup.addEventListener('click', function(){
             async function loadData() {

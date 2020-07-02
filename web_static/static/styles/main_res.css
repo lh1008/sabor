@@ -71,9 +71,8 @@ table {
   color: white;
 }
 
-/*-----NAVIGATION BAR ---------*/
+/*----- NAVIGATION BAR ---------*/
 .navbar1{
-  /* background-color: red; */
   font-family: 'Bebas Neue', cursive;
   width: 30%;
   float: left;
@@ -82,11 +81,6 @@ table {
     width: 60%;
     margin-top: 5%;
 }
-
-/* nav li{
-    text-align: center;
-    /* margin-top: 10%; 
-} */
 nav a{
   color: white;
 }
@@ -100,6 +94,7 @@ nav a:hover {
 }
 .original_mobile {
   position: absolute;
+  top: 32vw;
   left: calc(50% -4vw);
   width: 8vw;
   height: 8vw;
@@ -118,7 +113,6 @@ nav a:hover {
 /*--------- SLIDER -----------------*/
 #primer-slider{
   display: flexbox;
-  /* margin-top: 2%; */
   font-family: 'Bebas Neue', cursive;
   text-align: center;
   /* font-size: 45%; */
@@ -201,7 +195,6 @@ nav a:hover {
   position: relative;
   vertical-align: middle;
   text-align: right;
-  left: 3.5%;
   line-height: 68%;
   /* background-color: blue; */
   width: max-content;
@@ -225,7 +218,15 @@ nav a:hover {
   letter-spacing: -1px;
 }
 
-/*-----------CREDITS ---------------*/
+/*---------- FOOTER ----------------*/
+footer{
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
 .credits{
   display: inline-block;
   position: relative;
@@ -245,13 +246,51 @@ nav a:hover {
   width: 20%;
 }
 
-/*---------- FOOTER ----------------*/
-footer{
-  text-align: center;
+/*---------- FOOTER 2 ----------------*/
+.landscape {
   font-family: 'Bebas Neue', cursive;
-  position: fixed;
+  position: absolute;
+  /* background-color: green; */
+  width: 100%;
   bottom: 0;
-  left: 0;
+}
+
+.produccion {
+  position: relative;
+  font-size: 55%;
+  transform: scale(1, 1.3);
+  /* background-color: red; */
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+}
+
+.apoyo {
+  position: relative;
+  font-size: 55%;
+  transform: scale(1, 1.3);
+  margin-top: 4%;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: red; */
+  width: max-content;
+}
+
+.img-sabor {
+  /* background-color: saddlebrown; */
+  margin-top: -6%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 25%;
+}
+.img-mini {
+  /* background-color: saddlebrown; */
+  margin-top: -6%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 20%;
 }
 
 /* WINDOW VIDEO STYLES */
@@ -314,14 +353,280 @@ footer{
 /* ------------------------- */
 /*    MOBILE - RESPONSIVE    */
 /* ------------------------- */
-@media screen and (min-width: 480px) {
+
+@media screen and (min-width: 414px) {
+  /*----------- SLIDER -------------*/
+  .in-con {
+    font-size: 55%;
+  }
+  .in-names-1 {
+    font-size: 55%;
+  }
+  .in-names-all {
+    font-size: 55%;
+  }
+  .in-camara {
+    font-size: 55%;
+  }
+  .in-names-2 {
+    font-size: 55%;
+  }
+  .in-edicion {
+    font-size: 55%;
+  }
+  .in-daza {
+    font-size: 55%;
+  }
+  .in-names-all {
+    margin-top: -0.5%;
+  }
+  .line-up-2 {
+    margin-top: 0.4%;
+  }
+  .movie-from {
+    padding: 2%;
+  }
+
+
+}
+@media screen and (min-width: 568px) {
+  /*-----NAVIGATION BAR ---------*/
+  .navbar1 {
+    width: 20%;
+  }
+  .original_mobile {
+    top: 8vw;
+    width: 5vw;
+    height: 5vw;
+
+  }
+  /*------- MAIN ----------*/
+  .principal {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*------ WINDOW VIDEO STYLES -----*/
+  .popup {
+    width: 80%;
+  }
+  /*----------- SLIDER -------------*/
+  .in-con {
+    font-size: 60%;
+  }
+  .in-names-1 {
+    font-size: 60%;
+  }
+  .in-names-all {
+    font-size: 60%;
+  }
+  .in-camara {
+    font-size: 60%;
+  }
+  .in-names-2 {
+    font-size: 60%;
+  }
+  .in-edicion {
+    font-size: 60%;
+  }
+  .in-daza {
+    font-size: 60%;
+  }
+  .in-names-all {
+    margin-top: -0.55%;
+  }
+  .line-up-2 {
+    margin-top: 0.4%;
+  }
+  .movie-from {
+    margin-top: -6.5%;
+  }
+  /*------------ FOOTER -------------*/
+  .landscape {
+    text-align: center;
+  }
+  .landscape > div {
+    display: inline-block;
+  }
+  .produccion {
+    vertical-align: bottom;
+  }
+  .apoyo {
+    vertical-align: bottom;
+  }
+  .img-sabor {
+    width: 10%;
+    vertical-align: middle;
+  }
+  .img-mini {
+    width: 8%;
+    vertical-align: middle;
+  }
+  
+  
 
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 667px) {
+  /*------- SLIDER ----------*/
+  .in-con {
+    font-size: 65%;
+  }
+  .in-names-1 {
+    font-size: 65%;
+  }
+  .in-names-all {
+    font-size: 65%;
+  }
+  .in-camara {
+    font-size: 65%;
+  }
+  .in-names-2 {
+    font-size: 65%;
+  }
+  .in-edicion {
+    font-size: 65%;
+  }
+  .in-daza {
+    font-size: 65%;
+  }
+  .in-names-all {
+    margin-top: -0.55%;
+  }
+  .line-up-2 {
+    margin-top: 0.4%;
+  }
+  .movie-from {
+    margin-top: -8%;
+    padding: 2%;
+  }
+
+  #segundo-slider {
+    font-size: 70%;
+  }
+
+}
+
+@media screen and (min-width: 736px) {
+  .movie-from {
+    margin-top: -7%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /*------- SLIDER ----------*/
+  .in-con {
+    font-size: 60%;
+  }
+  .in-names-1 {
+    font-size: 60%;
+  }
+  .in-names-all {
+    font-size: 60%;
+  }
+  .in-camara {
+    font-size: 60%;
+  }
+  .in-names-2 {
+    font-size: 60%;
+  }
+  .in-edicion {
+    font-size: 60%;
+  }
+  .in-daza {
+    font-size: 60%;
+  }
+
+  .in-names-all {
+    margin-top: -0.56%;
+  }
+  .line-up-2 {
+    margin-top: 0.37%;
+  }
+  .movie-from {
+    margin-top: -5%;
+    padding: 2%;
+  }
   
 }
 
 @media screen and (min-width: 950px) {
+  /*-----NAVIGATION BAR ---------*/
+  .original_mobile {
+    top: 12vw;
+    width: 5vw;
+    height: 5vw;
+
+  }
+  /*------- MAIN ----------*/
+  .principal img{
+    width: 90%;
+    margin-top: -3%;
+  }
+  /*------- SLIDER ----------*/
+  #primer-slider {
+    margin-top: 1%;
+  }
+  .in-con {
+    font-size: 100%;
+  }
+  .in-names-1 {
+    font-size: 100%;
+  }
+  .in-names-all {
+    font-size: 100%;
+  }
+  .in-camara {
+    font-size: 100%;
+  }
+  .in-names-2 {
+    font-size: 100%;
+  }
+  .in-edicion {
+    font-size: 100%;
+  }
+  .in-daza {
+    font-size: 100%;
+  }
+
+  .in-names-all {
+    margin-top: -0.5%;
+  }
+  .line-up-2 {
+    margin-top: 0.5%;
+  }
+  .movie-from {
+    margin-top: -4%;
+    padding: 2%;
+  }
+  .in-peli {
+    font-size: 70%;
+  }
+
+  .in-names-3 {
+    font-size: 100%;
+  }
+
+  #segundo-slider {
+    font-size: 90%;
+  }
+
+  /*---------- FOOTER 2 ----------------*/
+.produccion {
+  font-size: 100%;
+  transform: scale(1, 1.3);
+}
+
+.apoyo {
+  font-size: 100%;
+  transform: scale(1, 1.3);
+}
+
+.img-sabor {
+  width: 10%;
+}
+.img-mini {
+  width: 10%;
+}
   
 }
