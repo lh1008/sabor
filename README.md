@@ -12,13 +12,9 @@ This project is a static website that will display the launch video of the first
 * HTML5
 * CSS
 
-## License
-
-Public Domain. No copy write protection.
-
 ## Authors
 
-**Felipe Astudillo** - Sabor Skateboards Owner
+**Felipe Astudillo** - Sabor Skateboards/Delicias del Asfalto Owner
 * Instagram
   * [@saborskateboards](https://www.instagram.com/saborskateboards/?hl=en)
   * [@deliciasdelasfalot](https://www.instagram.com/deliciasdelasfalto/?hl=en)  
