@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>video</title>
+    <link rel="stylesheet" href="./video.css">
+    <!-- Icon to close video streaming -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- page content -->
+
+    <ul>
+        <li><a href="#" id="btn-abrir-popup" class="btn-abrir-popup original" oncontextmenu="return false;">PELÍCULA</a></li>
+    </ul>
+
+     <!-- Video Window -->
+     <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <!-- <video id="noContextMenu" width="100%" controls controlsList="nodownload noremoteplayback" autoplay="autoplay" oncontextmenu="return false;">
+                <source src="./170115_05_USDollars1_2K.mp4" type="video/mp4">
+            </video>   -->
+            <div class="vid">
+                <iframe class="responsive-frame" src="https://www.youtube.com/embed/SQ8HP7sswgU?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>  
+        </div>
+    </div>
+
+    <!-- Video Window 2 -->
+    <video width="100%" controls playsinline>
+        <source src="./watch.mp4" type="video/mp4" codecs="avc1.42E01E, mp4a.40.2">
+        <source src="./watch.webm" type="video/webm" codecs="vp8,vorbis">
+        <source src="./watch.ogv" type="video/ogg" codecs="theora,vorbis">
+    </video>
+
+    <embed type="application/x-vlc-plugin" name="vlc" width="640" height="480" src="./170115_05_USDollars1_2K.mp4"/>
+    
+    <script>
+        /* Check if browser supports video element */
+        var supportsVideoElement = !!document.createElement('video').canPlayType;
+        /* var testVideo = document.createElement("video"); */
+        var checkVideo = (supportsVideoElement.getContext)? true : false
+        alert(checkVideo)
+
+        var test_canvas = document.createElement("canvas") //try and create sample canvas element
+        var canvascheck=(test_canvas.getContext)? true : false //check if object supports getContext() method, a method of the canvas element
+        alert(canvascheck) //alerts true if browser supports canvas element
+
+        /* NoContextMenu */
+        /*noContext = document.getElementById('noContextMenu');
+        videoChilds = noContext.childNodes;
+        noContext.controls = false;
+        for (const child of videoChilds) {
+            child.addEventListener('contextmenu', e => {
+                e.preventDefault();
+            }); 
+        }*/
+        /* js to popup video */
+        var btnAbrirPopup = document.getElementById('btn-abrir-popup'),
+            overlay = document.getElementById('overlay'),
+            popup = document.getElementById('popup'),
+            btnCerrarPopup = document.getElementById('btn-cerrar-popup');
+            btnAbrirPopup.setAttribute('class', 'original_mobile');
+            btnAbrirPopup.parentNode.style.position = 'absolute';
+            btnAbrirPopup.parentNode.style.left = 'calc(50% - 4vw)';
+            btnAbrirPopup.innerHTML = '';
+        
+        const videos = document.querySelectorAll('iframe');
+    
+        btnAbrirPopup.addEventListener('click', function(){
+            async function loadData() {
+                let response = await fetch(window.location + '/info', { headers:{
+                    'Content-Type': 'application/json'
+                }}).then(r => {
+                    return (r.json());
+                }).then(r => {
+                    return (r);
+                });
+                console.log(response);
+            };
+            loadData()
+            overlay.classList.add('active');
+            popup.classList.add('active');
+            /*noContext.play();*/
+        });
+    
+        btnCerrarPopup.addEventListener('click', function(e){
+            e.preventDefault();
+            videos.forEach(i => {
+                let source = i.src;
+                i.src = '';
+                i.src = source;
+            });
+            overlay.classList.remove('active');
+            popup.classList.remove('active');
+            /*noContext.pause();*/
+        });
+    </script>
+  </body>
+</html>

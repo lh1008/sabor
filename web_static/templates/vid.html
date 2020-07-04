@@ -102,7 +102,7 @@
         <div class="popup" id="popup">
             <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
             <div class="vid">
-                <iframe class="responsive-frame" src="https://www.youtube.com/embed/StBFaHz12pw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="responsive-frame" src="https://www.youtube.com/embed/SQ8HP7sswgU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -131,6 +131,8 @@
             btnAbrirPopup.parentNode.style.position = 'absolute';
             btnAbrirPopup.parentNode.style.left = 'calc(50% - 4vw)';
             btnAbrirPopup.innerHTML = '';
+
+        const videos = document.querySelectorAll('iframe');
     
         btnAbrirPopup.addEventListener('click', function(){
             async function loadData() {
@@ -150,6 +152,11 @@
         
         btnCerrarPopup.addEventListener('click', function(e){
             e.preventDefault();
+            videos.forEach(i => {
+                let source = i.src;
+                i.src = '';
+                i.src = source;
+            });
             overlay.classList.remove('active');
             popup.classList.remove('active');
         });
