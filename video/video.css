@@ -1,0 +1,85 @@
+/* --- NAVIGATION BAR ----- */
+.original {
+	font-size: 180%;
+  }
+  .original_mobile {
+	position: absolute;
+	top: 32vw;
+	left: calc(50% -4vw);
+	width: 8vw;
+	height: 8vw;
+	background-color: rgba(255, 255, 255, 0.6);
+	clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 0% 0%);
+  }
+
+
+/* WINDOW VIDEO STYLES */
+/* ------------------------- */
+/*          POPUP            */
+/* ------------------------- */
+
+.vid {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	padding-top: 56.25%;
+  }
+  .responsive-frame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+
+.overlay {
+	background: rgba(0,0,0,.3);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+  visibility: hidden;
+  z-index: 99;
+}
+
+.overlay.active {
+	visibility: visible;
+}
+
+.popup {
+  position: absolute;
+	background: #F8F8F8;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	font-family: 'Bebas Neue', sans-serif;
+	padding: 3%;
+	text-align: center;
+  width: 70%;
+	
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup .btn-cerrar-popup {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup .btn-cerrar-popup:hover {
+	color: #000;
+}
+
+/* ------------------------- */
+/*       ANIMATIONS         */
+/* ------------------------- */
+.popup.active {	transform: scale(1); opacity: 1; }
