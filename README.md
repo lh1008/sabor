@@ -4,13 +4,19 @@
 
 This project is a static website that will display the launch video of the first Colombian skateboard video produced in Cali - Colombia.
 
+https://deliciasdelasfalto.com
+
 ![alt text](web_static/static/images/logo_delicias.png)
 
-## Build With
+## Built Languages
 
 * Javascript
 * HTML5
 * CSS
+
+## Contributing
+
+To contribute please open an issue with the fix or suggestions you have. 
 
 ## Authors
 
